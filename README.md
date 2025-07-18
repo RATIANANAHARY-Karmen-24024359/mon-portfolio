@@ -1,4 +1,4 @@
-# 🎨 Mon Portfolio – Karmen RATIANANAHARY
+# Mon Portfolio – Karmen RATIANANAHARY
 
 Bienvenue sur mon portfolio personnel !  
 Vous y trouverez l'intitulés et les explications de mes projets réalisés dans le cadre de ma formation du BUT Informatique en 1ère année.
@@ -12,7 +12,7 @@ Motivée, rigoureuse, et curieuse, je m’applique à produire un travail soign�
 - Appliquer concrètement ce que j’ai appris en première année de formation
 - Intégrer une entreprise dynamique en tant que **UX/UI Designer** ou **Développeuse Web**
 
-## 💡 Contenu du portfolio
+## Contenu du portfolio
 
 - Maquettes UX/UI (Figma)
 - Intégration HTML/CSS
