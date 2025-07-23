@@ -85,47 +85,7 @@ const Portfolio = () => {
     }
   ];
 
-  function ProjectsList() {
-  return (
-    <div className="projects-wrapper">
-      {projects.map((project) => (
-        <div key={project.title} className="project-container">
-          <h3>{project.title}</h3>
-          <p>{project.tech}</p>
-
-          {project.url ? (
-            <a
-              href={project.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-link"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              <img
-                src={project.image}
-                alt={project.title}
-                className="project-image"
-                style={{ width: "300px", borderRadius: "4px" }}
-              />
-              <p>{project.description}</p>
-            </a>
-          ) : (
-            <>
-              <img
-                src={project.image}
-                alt={project.title}
-                className="project-image"
-                style={{ width: "300px", borderRadius: "4px" }}
-              />
-              <p>{project.description}</p>
-            </>
-          )}
-        </div>
-      ))}
-    </div>
-  );
-}
-
+  
   const formations = [
   {
     year: "2024 - en cours",
@@ -331,7 +291,7 @@ const Portfolio = () => {
                 href="https://github.com/RATIANANAHARY-Karmen-24024359"
                 target="_blank"
                 rel="noopener noreferrer"
-                
+
               >
                 GitHub
               </a>.
