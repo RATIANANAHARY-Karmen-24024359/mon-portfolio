@@ -85,6 +85,47 @@ const Portfolio = () => {
     }
   ];
 
+  function ProjectsList() {
+  return (
+    <div className="projects-wrapper">
+      {projects.map((project) => (
+        <div key={project.title} className="project-container">
+          <h3>{project.title}</h3>
+          <p>{project.tech}</p>
+
+          {project.url ? (
+            <a
+              href={project.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-link"
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              <img
+                src={project.image}
+                alt={project.title}
+                className="project-image"
+                style={{ width: "300px", borderRadius: "4px" }}
+              />
+              <p>{project.description}</p>
+            </a>
+          ) : (
+            <>
+              <img
+                src={project.image}
+                alt={project.title}
+                className="project-image"
+                style={{ width: "300px", borderRadius: "4px" }}
+              />
+              <p>{project.description}</p>
+            </>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+}
+
   const formations = [
   {
     year: "2024 - en cours",
@@ -92,7 +133,7 @@ const Portfolio = () => {
     institution: "IUT d'Aix-Marseille, Gaston Berger",
     location: "Aix-en-Provence",
     type: "formation",
-    description: "Ce BUT me permet d'acquérir des bases solides en programmation, réseaux et conception logicielle. J'ai découvert l'informatique en classe de 1ère au lycée, grâce à la spécialité NSI. Pour moi, c'est un choix mûrement réfléchi, car j'apprécie ce domaine et je souhaite évoluer dans le développement tout en gardant une approche concrète et créative."
+    description: "Ce BUT me permet d'acquérir des bases solides en programmation, réseaux et conception logicielle. J'ai découvert l'informatique en classe de 1ère au lycée, grâce à la spécialité Numérique et Sciences de l'Informatique. Pour moi, c'est un choix mûrement réfléchi, car j'apprécie ce domaine et je souhaite évoluer dans le développement tout en gardant une approche concrète et créative."
 
   },
   {
@@ -282,6 +323,18 @@ const Portfolio = () => {
                 </div>
               ))}
             </div>
+          </div>
+          <div className="projects-footer" style={{ marginTop: "2rem", textAlign: "center" }}>
+            <p>
+              Vous pouvez retrouver ces projets sur mon{' '}
+              <a
+                href="https://github.com/RATIANANAHARY-Karmen-24024359"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub
+              </a>.
+            </p>
           </div>
         </div>
       </section>
