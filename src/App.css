@@ -604,10 +604,13 @@ a:focus {
 
 .hero-subtitle-small {
   color: #2e2d2d85;
-
   font-weight: 300;
 }
 
+.hero-subtitle-details {
+  font-family: Arial;
+  font-size: 1.1rem;
+}
 .hero-subtitle-tag {
   display: inline-block;
   margin-top: 16px;
