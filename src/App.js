@@ -228,6 +228,8 @@ const Portfolio = () => {
                  <span className="hero-subtitle-tag">
                   Conception et développement d'applications
                 </span>
+                <span className="hero-subtitle-small"><strong> À partir de septembre 2025</strong><br><strong>Rythme</strong>: 1 mois en école / 1 mois en entreprise</br></span>
+
               </p>
               <p className="hero-subtitle">
                 Intéressée par des rôles de :<br />
