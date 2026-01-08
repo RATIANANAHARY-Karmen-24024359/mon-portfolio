@@ -86,101 +86,101 @@ const Portfolio = () => {
   ];
 
   function ProjectsList() {
-  return (
-    <div className="projects-wrapper">
-      {projects.map((project) => (
-        <div key={project.title} className="project-container">
-          <h3>{project.title}</h3>
-          <p>{project.tech}</p>
+    return (
+      <div className="projects-wrapper">
+        {projects.map((project) => (
+          <div key={project.title} className="project-container">
+            <h3>{project.title}</h3>
+            <p>{project.tech}</p>
 
-          {project.url ? (
-            <a
-              href={project.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-link"
-              style={{ textDecoration: "none", color: "inherit" }}
-            >
-              <img
-                src={project.image}
-                alt={project.title}
-                className="project-image"
-                style={{ width: "300px", borderRadius: "4px" }}
-              />
-              <p>{project.description}</p>
-            </a>
-          ) : (
-            <>
-              <img
-                src={project.image}
-                alt={project.title}
-                className="project-image"
-                style={{ width: "300px", borderRadius: "4px" }}
-              />
-              <p>{project.description}</p>
-            </>
-          )}
-        </div>
-      ))}
-    </div>
-  );
-}
+            {project.url ? (
+              <a
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="project-image"
+                  style={{ width: "300px", borderRadius: "4px" }}
+                />
+                <p>{project.description}</p>
+              </a>
+            ) : (
+              <>
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="project-image"
+                  style={{ width: "300px", borderRadius: "4px" }}
+                />
+                <p>{project.description}</p>
+              </>
+            )}
+          </div>
+        ))}
+      </div>
+    );
+  }
 
   const formations = [
-  {
-    year: "2024 - en cours",
-    title: "BUT Informatique",
-    institution: "IUT d'Aix-Marseille, Gaston Berger",
-    location: "Aix-en-Provence",
-    type: "formation",
-    description: "Ce BUT me permet d'acquérir des bases solides en programmation, réseaux et conception logicielle. J'ai découvert l'informatique en classe de 1ère au lycée, grâce à la spécialité Numérique et Sciences de l'Informatique. Pour moi, c'est un choix mûrement réfléchi, car j'apprécie ce domaine et je souhaite évoluer dans le développement tout en gardant une approche concrète et créative."
+    {
+      year: "2024 - en cours",
+      title: "BUT Informatique",
+      institution: "IUT d'Aix-Marseille, Gaston Berger",
+      location: "Aix-en-Provence",
+      type: "formation",
+      description: "Ce BUT me permet d'acquérir des bases solides en programmation, réseaux et conception logicielle. J'ai découvert l'informatique en classe de 1ère au lycée, grâce à la spécialité Numérique et Sciences de l'Informatique. Pour moi, c'est un choix mûrement réfléchi, car j'apprécie ce domaine et je souhaite évoluer dans le développement tout en gardant une approche concrète et créative."
 
-  },
-  {
-    year: "2024",
-    title: "Bac Général",
-    institution: "Lycée Nelson Mandela",
-    location: "Marseille",
-    details: "Spé Maths & Physique-Chimie - Mention Assez Bien",
-    type: "formation",
-    description: "Le Baccalauréat m’a appris la rigueur scientifique et m’a permis de découvrir mon intérêt pour la logique et la résolution de problèmes. Les spécialités choisies m’ont préparée aux études en informatique."
-  },
-  {
-    year: "2024 - en cours",
-    title: "Commission technique & communication",
-    institution: "FPMA Aix-Marseille",
-    details: "Maintenance site web, streaming, sonorisation, création vidéos & flyers",
-    type: "experience",
-    description: "J’ai appris à être polyvalente et autonome dans un contexte associatif. Cela m’a permis d’explorer la communication visuelle et la technique au service de projets collectifs."
-  }
-];
+    },
+    {
+      year: "2024",
+      title: "Bac Général",
+      institution: "Lycée Nelson Mandela",
+      location: "Marseille",
+      details: "Spé Maths & Physique-Chimie - Mention Assez Bien",
+      type: "formation",
+      description: "Le Baccalauréat m’a appris la rigueur scientifique et m’a permis de découvrir mon intérêt pour la logique et la résolution de problèmes. Les spécialités choisies m’ont préparée aux études en informatique."
+    },
+    {
+      year: "2024 - en cours",
+      title: "Commission technique & communication",
+      institution: "FPMA Aix-Marseille",
+      details: "Maintenance site web, streaming, sonorisation, création vidéos & flyers",
+      type: "experience",
+      description: "J’ai appris à être polyvalente et autonome dans un contexte associatif. Cela m’a permis d’explorer la communication visuelle et la technique au service de projets collectifs."
+    }
+  ];
 
 
   const competencesTechniques = [
     {
       category: "Langages",
-      skills: ["Python", "C++", "Java", "JavaFX", "HTML", "CSS", "JavaScript", "SQL*Plus", "MIPS"],
+      skills: ["Python", "C++", "Java", "JavaFX", "HTML", "CSS", "JavaScript", "SQL*Plus", "PHP"],
       color: "skill-orange"
     },
     {
       category: "Réseau",
-      skills: ["TCP/UDP", "SSH", "DNS", "SMTP/IMAP", "HTTP", "ARP", "ICMP", "DNS"],
+      skills: ["TCP/UDP", "SSH", "DNS", "SMTP/IMAP", "HTTP", "ARP", "ICMP", "IPv4"],
       color: "skill-amber"
     },
     {
       category: "Systèmes",
-      skills: ["Linux (ISO perso)", "Windows"],
+      skills: ["Linux (ISO perso)"],
       color: "skill-yellow"
     },
     {
       category: "Outils",
-      skills: ["Figma", "IntelliJ", "Qt Creator", "Wireshark", "GitHub", "Packet Tracer"],
+      skills: ["Figma", "IntelliJ", "Qt Creator", "PhpStorm", "GitHub", "Packet Tracer", "Spyder", "Jupyter Notebook"],
       color: "skill-red"
     }
   ];
 
   const softSkills = [
-    "Curieuse", "Autonome", "Organisée", "Créative", 
+    "Curieuse", "Autonome", "Organisée", "Créative",
     "Enthousiaste", "Esprit d'équipe", "Esprit d'initiative"
   ];
 
@@ -193,7 +193,7 @@ const Portfolio = () => {
             <div className="navbar-brand">
               Karmen RATIANANAHARY
             </div>
-            
+
             {/* Desktop Menu */}
             <div className="navbar-menu">
               {menuItems.map(({ id, label, icon: Icon }) => (
@@ -243,20 +243,20 @@ const Portfolio = () => {
 
       {/* Hero Section */}
       <section id="home" className="hero-section">
-      <div className="container">
-        <div className="hero-row">
-          <div className="hero-photo">
-            <div className="photo-frame">
-              {!imgError ? (
-                <img 
-                  src="/photo_profil.png" 
-                  alt="Karmen RATIANANAHARY" 
-                  className="avatar-image"
-                  onError={() => setImgError(true)}
-                />
-                  ) : (
-                <div className="avatar-fallback">Photo non disponible</div>
-              )}              
+        <div className="container">
+          <div className="hero-row">
+            <div className="hero-photo">
+              <div className="photo-frame">
+                {!imgError ? (
+                  <img
+                    src="/photo_profil.png"
+                    alt="Karmen RATIANANAHARY"
+                    className="avatar-image"
+                    onError={() => setImgError(true)}
+                  />
+                ) : (
+                  <div className="avatar-fallback">Photo non disponible</div>
+                )}
               </div>
             </div>
             <div className="hero-intro">
@@ -264,16 +264,12 @@ const Portfolio = () => {
                 Salut, je suis <span className="hero-name">Karmen</span>
               </h1>
               <p className="hero-subtitle">
-                <span className="hero-subtitle-small">Je suis à la recherche d'une alternance en</span><br />
-                 <span className="hero-subtitle-tag">
-                  Conception et développement d'applications
+                <span className="hero-subtitle-small">Je suis à la recherche d'un stage de 10 semaines à partir du 13 avril 2026 en</span><br />
+                <span className="hero-subtitle-tag">
+                  Conception & Développement d'applications ou Data & IA
                 </span>
               </p>
-              <p className="hero-subtitle">
-                Intéressée par des rôles de :<br />
-                <span className="hero-subtitle-small">UX/UI Designer & Développeuse web/d'appplications</span>
-              </p>            
-              
+
               <div className="hero-info">
                 <div className="hero-info-item">
                   <MapPin size={18} />
@@ -281,7 +277,7 @@ const Portfolio = () => {
                 </div>
                 <div className="hero-info-item">
                   <GraduationCap size={18} />
-                  <span>BUT Informatique - 1ère année</span>
+                  <span>BUT Informatique - 2e année</span>
                 </div>
               </div>
               <div className="hero-buttons">
@@ -305,7 +301,7 @@ const Portfolio = () => {
           <h2 className="section-title">
             <span className="title-accent">Projets</span>
           </h2>
-          
+
           <div className="projects-container">
             <div className="projects-grid">
               {projects.map((project, index) => (
@@ -345,10 +341,10 @@ const Portfolio = () => {
           <h2 className="section-title">
             Mon <span className="title-accent">Parcours</span>
           </h2>
-          
+
           <div className="timeline">
             <div className="timeline-line"></div>
-            
+
             {formations.map((item, index) => (
               <div key={index} className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}>
                 <div className="timeline-content">
@@ -371,7 +367,7 @@ const Portfolio = () => {
 
                   </div>
                 </div>
-                
+
                 <div className="timeline-dot"></div>
               </div>
             ))}
@@ -385,7 +381,7 @@ const Portfolio = () => {
           <h2 className="section-title">
             Mes <span className="title-accent">Compétences</span>
           </h2>
-          
+
           <div className="competences-grid">
             {/* Compétences Techniques */}
             <div className="competences-column">
@@ -393,7 +389,7 @@ const Portfolio = () => {
                 <Code className="competences-icon" size={28} />
                 Compétences Techniques
               </h3>
-              
+
               <div className="competences-categories">
                 {competencesTechniques.map((category, index) => (
                   <div key={index} className="competences-category">
@@ -409,14 +405,14 @@ const Portfolio = () => {
                 ))}
               </div>
             </div>
-            
+
             {/* Soft Skills */}
             <div className="competences-column">
               <h3 className="competences-title">
                 <User className="competences-icon soft-skills" size={28} />
                 Compétences Personnelles
               </h3>
-              
+
               <div className="soft-skills-container">
                 <div className="soft-skills-grid">
                   {softSkills.map((skill, index) => (
@@ -438,18 +434,18 @@ const Portfolio = () => {
           <h2 className="section-title">
             Me <span className="title-accent">Contacter</span>
           </h2>
-          
+
           <div className="contact-content">
             <p className="contact-description">
               À la recherche d'une alternante ? N'hésitez pas à me contacter !
             </p>
-            
+
             <div className="contact-links">
               <a href="mailto:karmen.ratiananahary@gmail.com" className="contact-link">
                 <Mail size={24} />
                 <span>karmen.ratiananahary@gmail.com</span>
               </a>
-              
+
               <a href="tel:0783704139" className="contact-link">
                 <Phone size={24} />
                 <span>07 83 70 41 39</span>
