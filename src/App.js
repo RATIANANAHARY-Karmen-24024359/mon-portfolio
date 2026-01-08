@@ -224,7 +224,7 @@ const Portfolio = () => {
                 Salut, je suis <span className="hero-name">Karmen</span>
               </h1>
               <p className="hero-subtitle">
-                <span className="hero-subtitle-small">Je suis à la recherche d'un stage de 10 semaines à partir du <br> 13 avril 2026 en</span>
+                <span className="hero-subtitle-small">Je suis à la recherche d'un stage de 10 semaines<br />à partir du 13 avril 2026 en</span>
                 <span className="hero-subtitle-tag">
                   Conception & Développement d'applications ou Data & IA
                 </span>
