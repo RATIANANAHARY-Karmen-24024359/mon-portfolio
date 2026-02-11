@@ -1,3 +1,5 @@
-# https://www.robotstxt.org/robotstxt.html
+# robots.txt — Portfolio Karmen RATIANANAHARY
 User-agent: *
-Disallow:
+Allow: /
+
+Sitemap: https://portfoliokarmen.netlify.app/sitemap.xml
