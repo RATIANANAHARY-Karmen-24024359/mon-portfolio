@@ -411,7 +411,7 @@ const Portfolio = () => {
 
               <div className="hero-subtitle">
                 <span className="hero-subtitle-small">
-                  Étudiante en BUT Informatique, à la recherche d'un stage de 10 semaines à partir du 13 avril 2026 en
+                  Étudiante en BUT Informatique, à la recherche d'une alternance pour la rentrée 2026 en
                 </span>
                 <span className="hero-subtitle-tag">
                   {typedText}<span className="typing-cursor" aria-hidden="true" />
